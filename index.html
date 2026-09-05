@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy & Terms of Service - Warraq Learning Platform</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #0D0D0D;
+            --bg-secondary: #1a1a1a;
+            --bg-tertiary: #252525;
+            --text-primary: #F5F0E8;
+            --text-secondary: #b8b3ab;
+            --accent: #C9A84C;
+            --accent-light: #e8d5a6;
+            --border: #333333;
+        }
+
+        html {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            background: linear-gradient(135deg, rgba(201, 168, 76, 0.1) 0%, rgba(201, 168, 76, 0.05) 100%);
+            border-bottom: 1px solid var(--border);
+            padding: 48px 0;
+            margin-bottom: 48px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+            color: var(--accent);
+        }
+
+        header p {
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+
+        /* ===== NAVIGATION ===== */
+        .nav-tabs {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 48px;
+            border-bottom: 1px solid var(--border);
+            overflow-x: auto;
+            padding-bottom: 0;
+        }
+
+        .nav-tabs button {
+            background: none;
+            border: none;
+            padding: 16px 0;
+            margin-bottom: -1px;
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .nav-tabs button:hover {
+            color: var(--accent);
+        }
+
+        .nav-tabs button.active {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+
+        /* ===== CONTENT ===== */
+        .content-section {
+            display: none;
+        }
+
+        .content-section.active {
+            display: block;
+        }
+
+        section {
+            margin-bottom: 48px;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 24px;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 16px;
+        }
+
+        h3 {
+            font-size: 18px;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            color: var(--accent);
+        }
+
+        h4 {
+            font-size: 14px;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 8px;
+            line-height: 1.8;
+        }
+
+        strong {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--accent-light);
+            text-decoration: underline;
+        }
+
+        .info-box {
+            background-color: var(--bg-secondary);
+            border-left: 3px solid var(--accent);
+            padding: 16px;
+            margin: 24px 0;
+            border-radius: 4px;
+        }
+
+        .info-box strong {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 12px;
+            font-style: italic;
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 48px 0;
+            margin-top: 64px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 12px;
+        }
+
+        footer p {
+            margin-bottom: 12px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            font-size: 12px;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            header {
+                padding: 32px 0;
+                margin-bottom: 32px;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+
+            .nav-tabs {
+                gap: 8px;
+            }
+
+            .nav-tabs button {
+                padding: 12px 0;
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 12px;
+            }
+
+            header {
+                padding: 24px 0;
+            }
+
+            header h1 {
+                font-size: 20px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            h3 {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Legal Information</h1>
+            <p>Privacy Policy & Terms of Service for Warraq Learning Platform</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- ===== NAVIGATION ===== -->
+        <div class="nav-tabs">
+            <button class="nav-btn active" onclick="switchTab('privacy')">Privacy Policy</button>
+            <button class="nav-btn" onclick="switchTab('terms')">Terms of Service</button>
+            <button class="nav-btn" onclick="switchTab('cookies')">Cookies</button>
+            <button class="nav-btn" onclick="switchTab('contact')">Contact</button>
+        </div>
+
+        <!-- ===== PRIVACY POLICY ===== -->
+        <div id="privacy" class="content-section active">
+            <h2>Privacy Policy</h2>
+
+            <section>
+                <p>
+                    <strong>Effective Date: January 1, 2024</strong><br>
+                    Last Updated: September 5, 2026
+                </p>
+
+                <p>
+                    Warraq Learning Platform ("Company," "we," "our," or "us") is committed to protecting your privacy. 
+                    This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you 
+                    visit our platform (the "Service").
+                </p>
+            </section>
+
+            <section>
+                <h3>1. Information We Collect</h3>
+
+                <h4>1.1 Information You Provide</h4>
+                <ul>
+                    <li><strong>Account Registration:</strong> Name, email address, password, profile information, educational background</li>
+                    <li><strong>Payment Information:</strong> Billing address, payment method details (processed securely via third-party providers)</li>
+                    <li><strong>Learning Data:</strong> Course progress, quiz scores, completed modules, learning preferences</li>
+                    <li><strong>Communications:</strong> Messages, support inquiries, feedback, survey responses</li>
+                    <li><strong>Content Creation:</strong> Code submissions, project work, written assignments</li>
+                </ul>
+
+                <h4>1.2 Information Collected Automatically</h4>
+                <ul>
+                    <li><strong>Device Information:</strong> IP address, browser type, operating system, device identifier</li>
+                    <li><strong>Usage Data:</strong> Pages visited, time spent on content, clicks, interaction patterns</li>
+                    <li><strong>Location Data:</strong> Approximate location based on IP address (not precise GPS)</li>
+                    <li><strong>Cookies & Tracking:</strong> Session identifiers, preferences, analytics data</li>
+                </ul>
+
+                <h4>1.3 Third-Party Data</h4>
+                <ul>
+                    <li>If you sign up via Google, GitHub, or other OAuth providers, we receive your public profile data</li>
+                    <li>Social media engagement data (if you link your accounts)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>2. How We Use Your Information</h3>
+
+                <p>We use the information we collect for the following purposes:</p>
+
+                <ul>
+                    <li><strong>Service Delivery:</strong> Providing, maintaining, and improving the Warraq platform</li>
+                    <li><strong>Account Management:</strong> Creating and managing your account, authentication, security</li>
+                    <li><strong>Personalization:</strong> Tailoring content recommendations and learning paths to your needs</li>
+                    <li><strong>Communication:</strong> Sending platform updates, course announcements, support responses</li>
+                    <li><strong>Analytics:</strong> Understanding user behavior to improve our services</li>
+                    <li><strong>Legal Compliance:</strong> Meeting legal obligations and enforcing our policies</li>
+                    <li><strong>Marketing:</strong> With your consent, sending newsletters and promotional content</li>
+                    <li><strong>Fraud Prevention:</strong> Detecting and preventing unauthorized access and abuse</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>3. How We Share Your Information</h3>
+
+                <p><strong>We do NOT sell your personal data.</strong> However, we may share information with:</p>
+
+                <h4>3.1 Service Providers</h4>
+                <ul>
+                    <li>Cloud hosting providers (for data storage and processing)</li>
+                    <li>Payment processors (for billing)</li>
+                    <li>Email service providers (for communications)</li>
+                    <li>Analytics platforms (for usage insights)</li>
+                    <li>Customer support tools</li>
+                </ul>
+
+                <h4>3.2 Legal Requirements</h4>
+                <p>
+                    We may disclose your information when required by law, court order, or government request, 
+                    or to protect our rights, privacy, safety, or property.
+                </p>
+
+                <h4>3.3 Business Transfers</h4>
+                <p>
+                    If Warraq is involved in a merger, acquisition, bankruptcy, or sale of assets, your information 
+                    may be transferred as part of that transaction.
+                </p>
+
+                <h4>3.4 Public Content</h4>
+                <p>
+                    If you create public profiles or share content on community forums, that information may be 
+                    visible to other users.
+                </p>
+            </section>
+
+            <section>
+                <h3>4. Data Security</h3>
+
+                <p>
+                    We implement industry-standard security measures including:
+                </p>
+
+                <ul>
+                    <li>HTTPS encryption for data in transit</li>
+                    <li>Secure password hashing with bcrypt or similar</li>
+                    <li>Regular security audits and penetration testing</li>
+                    <li>Access controls and principle of least privilege</li>
+                    <li>Secure data deletion after retention periods</li>
+                </ul>
+
+                <div class="info-box">
+                    <strong>No Guarantee of Absolute Security</strong>
+                    <p>
+                        While we strive to protect your information, no system is completely secure. 
+                        We cannot guarantee absolute security of your data.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h3>5. Your Privacy Rights</h3>
+
+                <h4>5.1 Access & Portability</h4>
+                <p>You have the right to request a copy of your personal data we hold.</p>
+
+                <h4>5.2 Correction</h4>
+                <p>You can update or correct inaccurate information through your account settings.</p>
+
+                <h4>5.3 Deletion</h4>
+                <p>
+                    You can request deletion of your account and associated data. Some information may be retained 
+                    for legal or operational purposes.
+                </p>
+
+                <h4>5.4 Opt-Out</h4>
+                <p>
+                    You can opt out of marketing communications at any time via email or account preferences. 
+                    Essential service communications cannot be disabled.
+                </p>
+
+                <h4>5.5 GDPR & CCPA Rights</h4>
+                <p>
+                    If you're in the EU (GDPR) or California (CCPA), you have additional rights including 
+                    data portability, objection to processing, and restriction of use.
+                </p>
+
+                <p>To exercise any of these rights, contact us at: <strong>privacy@warraq.com</strong></p>
+            </section>
+
+            <section>
+                <h3>6. Data Retention</h3>
+
+                <ul>
+                    <li><strong>Active Accounts:</strong> Retained while your account is active</li>
+                    <li><strong>Learning Data:</strong> Retained for 2 years after account deletion (for records)</li>
+                    <li><strong>Payment Records:</strong> Retained for 7 years (legal/tax requirements)</li>
+                    <li><strong>Logs & Analytics:</strong> Typically retained for 90 days</li>
+                    <li><strong>Marketing Data:</strong> Retained until you unsubscribe</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>7. Children's Privacy</h3>
+
+                <p>
+                    Warraq is not intended for children under 13 (or the applicable age of digital consent in your region). 
+                    We do not knowingly collect data from children under 13. If we become aware that a child has provided 
+                    information, we will delete it immediately.
+                </p>
+
+                <p>
+                    Parents or guardians concerned about their child's data should contact us at <strong>privacy@warraq.com</strong>
+                </p>
+            </section>
+
+            <section>
+                <h3>8. International Data Transfers</h3>
+
+                <p>
+                    Your information may be transferred to, processed in, and stored in countries other than your 
+                    country of residence. These countries may have different data protection laws. By using Warraq, 
+                    you consent to such transfers.
+                </p>
+
+                <p>
+                    For EU residents, we ensure adequate safeguards including Standard Contractual Clauses.
+                </p>
+            </section>
+
+            <section>
+                <h3>9. Third-Party Links</h3>
+
+                <p>
+                    Warraq may contain links to external websites. We are not responsible for their privacy practices. 
+                    Please review their privacy policies before providing information.
+                </p>
+            </section>
+
+            <section>
+                <h3>10. Changes to This Policy</h3>
+
+                <p>
+                    We may update this Privacy Policy periodically. Changes become effective when posted. 
+                    Continued use of Warraq constitutes acceptance of updated policies. 
+                    We will notify you of material changes via email.
+                </p>
+            </section>
+
+            <div class="last-updated">
+                <strong>Last Updated:</strong> September 5, 2026<br>
+                <strong>Effective Date:</strong> January 1, 2024
+            </div>
+        </div>
+
+        <!-- ===== TERMS OF SERVICE ===== -->
+        <div id="terms" class="content-section">
+            <h2>Terms of Service</h2>
+
+            <section>
+                <p>
+                    <strong>Effective Date: January 1, 2024</strong><br>
+                    Last Updated: September 5, 2026
+                </p>
+
+                <p>
+                    These Terms of Service ("Terms") govern your use of the Warraq Learning Platform 
+                    ("Service," "Platform," "we," "us," "our"). By accessing or using Warraq, you agree to be bound 
+                    by these Terms.
+                </p>
+            </section>
+
+            <section>
+                <h3>1. Acceptance of Terms</h3>
+
+                <p>
+                    By registering, accessing, or using the Warraq platform, you acknowledge that you have read, 
+                    understood, and agree to be bound by these Terms. If you do not agree, do not use the Service.
+                </p>
+
+                <p>
+                    We reserve the right to modify these Terms at any time. Changes are effective immediately upon posting. 
+                    Continued use of Warraq after changes constitutes acceptance.
+                </p>
+            </section>
+
+            <section>
+                <h3>2. User Eligibility</h3>
+
+                <ul>
+                    <li>You must be at least 13 years old (or the age of digital consent in your jurisdiction)</li>
+                    <li>Users under 18 must have parental/guardian consent</li>
+                    <li>You must provide accurate, truthful information</li>
+                    <li>You are responsible for maintaining the confidentiality of your account credentials</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>3. Account Responsibilities</h3>
+
+                <h4>3.1 Account Creation</h4>
+                <p>You are responsible for:</p>
+                <ul>
+                    <li>Providing accurate information during registration</li>
+                    <li>Maintaining your password's security</li>
+                    <li>All activities under your account</li>
+                    <li>Notifying us of unauthorized access</li>
+                </ul>
+
+                <h4>3.2 Account Termination</h4>
+                <p>
+                    We may suspend or terminate your account if you violate these Terms, engage in illegal activity, 
+                    or misuse the Service.
+                </p>
+            </section>
+
+            <section>
+                <h3>4. Acceptable Use Policy</h3>
+
+                <p>You agree NOT to:</p>
+
+                <ul>
+                    <li><strong>Illegal Activity:</strong> Use Warraq for any illegal or harmful purposes</li>
+                    <li><strong>Harassment:</strong> Engage in bullying, harassment, or discriminatory behavior</li>
+                    <li><strong>Intellectual Property:</strong> Infringe on copyrights, patents, or trademarks</li>
+                    <li><strong>Malware:</strong> Upload viruses, malware, or malicious code</li>
+                    <li><strong>Hacking:</strong> Attempt unauthorized access, data breach, or system disruption</li>
+                    <li><strong>Spam:</strong> Send unsolicited messages, advertisements, or phishing content</li>
+                    <li><strong>Impersonation:</strong> Pretend to be someone else or misrepresent your identity</li>
+                    <li><strong>Plagiarism:</strong> Submit others' work as your own without attribution</li>
+                    <li><strong>Commercial Use:</strong> Resell access or use the Service for unauthorized commercial purposes</li>
+                    <li><strong>Reverse Engineering:</strong> Attempt to decompile, reverse engineer, or extract code</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>5. Intellectual Property Rights</h3>
+
+                <h4>5.1 Warraq Content</h4>
+                <p>
+                    All course materials, code examples, videos, tutorials, and documentation are owned by Warraq 
+                    or our content creators and are protected by copyright law. You may use them for personal learning 
+                    only, not for commercial distribution.
+                </p>
+
+                <h4>5.2 Your Content</h4>
+                <p>
+                    You retain ownership of your project submissions, code, and written work. By uploading to Warraq, 
+                    you grant us a non-exclusive license to use your content for:
+                </p>
+                <ul>
+                    <li>Providing and improving the Service</li>
+                    <li>Analytics and usage tracking</li>
+                    <li>Course recommendations</li>
+                    <li>Quality assurance and testing</li>
+                </ul>
+
+                <p>
+                    We will not share your work publicly without your explicit consent, except as required for 
+                    peer review or instructor feedback if applicable.
+                </p>
+            </section>
+
+            <section>
+                <h3>6. Limitation of Liability</h3>
+
+                <div class="info-box">
+                    <strong>Disclaimer</strong>
+                    <p>
+                        WARRAQ IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, 
+                        INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.
+                    </p>
+                </div>
+
+                <h4>6.1 No Guarantees</h4>
+                <ul>
+                    <li>We do not guarantee the accuracy, completeness, or timeliness of content</li>
+                    <li>Course materials are provided for educational purposes only</li>
+                    <li>Completion of courses does not guarantee employment or specific outcomes</li>
+                    <li>We do not warrant uninterrupted or error-free service</li>
+                </ul>
+
+                <h4>6.2 Limitation of Damages</h4>
+                <p>
+                    In no event shall Warraq be liable for indirect, incidental, special, or consequential damages 
+                    (including lost profits, data loss) arising from your use of the Service, even if advised of 
+                    the possibility of such damages.
+                </p>
+
+                <p>
+                    Our total liability is limited to the amount you paid Warraq in the 12 months preceding the claim.
+                </p>
+            </section>
+
+            <section>
+                <h3>7. Service Availability</h3>
+
+                <ul>
+                    <li>We strive for 99.5% uptime but make no guarantees</li>
+                    <li>We may perform maintenance and updates that may cause temporary service disruption</li>
+                    <li>We reserve the right to modify, suspend, or discontinue features without liability</li>
+                    <li>You are responsible for backing up your data</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>8. Payment & Refunds</h3>
+
+                <h4>8.1 Pricing</h4>
+                <ul>
+                    <li>Prices are subject to change with notice</li>
+                    <li>Billing occurs on the date you specified during registration</li>
+                    <li>You authorize us to charge your payment method</li>
+                </ul>
+
+                <h4>8.2 Refunds</h4>
+                <ul>
+                    <li>Full refunds available within 14 days of purchase</li>
+                    <li>Refunds not available after 14 days or if 30% of course content is accessed</li>
+                    <li>Refund requests must be submitted to support@warraq.com</li>
+                </ul>
+
+                <h4>8.3 Cancellation</h4>
+                <p>
+                    You can cancel your subscription anytime through your account settings. 
+                    Cancellation is effective at the end of your billing cycle.
+                </p>
+            </section>
+
+            <section>
+                <h3>9. User-Generated Content</h3>
+
+                <p>
+                    If Warraq includes community forums, comments, or discussion boards:
+                </p>
+
+                <ul>
+                    <li>You are solely responsible for your content</li>
+                    <li>We do not pre-screen content but may remove violations</li>
+                    <li>We may use moderation, including removal and account suspension</li>
+                    <li>Offensive, illegal, or harmful content will be removed</li>
+                    <li>You grant other users the right to view and comment on your public content</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>10. Feedback & Submissions</h3>
+
+                <p>
+                    Any feedback, suggestions, or ideas you provide to Warraq may be used by us without compensation 
+                    or attribution. We assume no obligation to implement suggestions.
+                </p>
+            </section>
+
+            <section>
+                <h3>11. Third-Party Services</h3>
+
+                <p>
+                    Warraq may integrate third-party services (payment processors, hosting providers, analytics tools). 
+                    We are not responsible for their operations, privacy practices, or performance. Use of third-party 
+                    services is subject to their terms.
+                </p>
+            </section>
+
+            <section>
+                <h3>12. Indemnification</h3>
+
+                <p>
+                    You agree to indemnify and hold harmless Warraq and its officers, employees, and agents from 
+                    any claims, damages, or losses arising from your violation of these Terms or use of the Service.
+                </p>
+            </section>
+
+            <section>
+                <h3>13. Governing Law & Dispute Resolution</h3>
+
+                <h4>13.1 Governing Law</h4>
+                <p>
+                    These Terms are governed by and construed in accordance with the laws of 
+                    [Your Jurisdiction], without regard to conflict of law principles.
+                </p>
+
+                <h4>13.2 Dispute Resolution</h4>
+                <p>
+                    Before pursuing legal action, we encourage you to contact us at support@warraq.com to resolve disputes.
+                </p>
+
+                <h4>13.3 Arbitration</h4>
+                <p>
+                    Any legal dispute shall be resolved through binding arbitration rather than court proceedings, 
+                    except for intellectual property claims.
+                </p>
+            </section>
+
+            <section>
+                <h3>14. Severability</h3>
+
+                <p>
+                    If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions 
+                    remain in full force and effect.
+                </p>
+            </section>
+
+            <section>
+                <h3>15. Entire Agreement</h3>
+
+                <p>
+                    These Terms, along with our Privacy Policy, constitute the entire agreement between you and Warraq 
+                    regarding the Service and supersede all prior agreements or understandings.
+                </p>
+            </section>
+
+            <div class="last-updated">
+                <strong>Last Updated:</strong> September 5, 2026<br>
+                <strong>Effective Date:</strong> January 1, 2024
+            </div>
+        </div>
+
+        <!-- ===== COOKIES POLICY ===== -->
+        <div id="cookies" class="content-section">
+            <h2>Cookie Policy</h2>
+
+            <section>
+                <p>
+                    Warraq uses cookies and similar technologies to enhance your experience. This Cookie Policy 
+                    explains what cookies are, how we use them, and your choices.
+                </p>
+            </section>
+
+            <section>
+                <h3>1. What Are Cookies?</h3>
+
+                <p>
+                    Cookies are small text files stored on your device that help websites remember your preferences 
+                    and activity. They typically contain:
+                </p>
+
+                <ul>
+                    <li>Session identifiers</li>
+                    <li>User preferences</li>
+                    <li>Authentication tokens</li>
+                    <li>Analytics data</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>2. Types of Cookies We Use</h3>
+
+                <h4>2.1 Essential Cookies</h4>
+                <ul>
+                    <li><strong>Purpose:</strong> Authentication, security, platform functionality</li>
+                    <li><strong>Duration:</strong> Session or 12 months</li>
+                    <li><strong>Opt-out:</strong> Cannot be disabled; required for the platform to work</li>
+                </ul>
+
+                <h4>2.2 Performance Cookies</h4>
+                <ul>
+                    <li><strong>Purpose:</strong> Analytics, usage patterns, performance monitoring</li>
+                    <li><strong>Duration:</strong> 90 days to 2 years</li>
+                    <li><strong>Tools:</strong> Google Analytics, Mixpanel</li>
+                    <li><strong>Opt-out:</strong> You can opt out in cookie preferences</li>
+                </ul>
+
+                <h4>2.3 Functional Cookies</h4>
+                <ul>
+                    <li><strong>Purpose:</strong> Remember preferences, language, theme</li>
+                    <li><strong>Duration:</strong> 1 year</li>
+                    <li><strong>Opt-out:</strong> You can opt out in cookie preferences</li>
+                </ul>
+
+                <h4>2.4 Marketing Cookies</h4>
+                <ul>
+                    <li><strong>Purpose:</strong> Personalized ads, retargeting, social media integration</li>
+                    <li><strong>Duration:</strong> 6 months to 2 years</li>
+                    <li><strong>Partners:</strong> Google Ads, Facebook Pixel</li>
+                    <li><strong>Opt-out:</strong> You can opt out in cookie preferences or ad settings</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>3. Similar Technologies</h3>
+
+                <p>We also use:</p>
+
+                <ul>
+                    <li><strong>Local Storage:</strong> Browser storage for user preferences and session data</li>
+                    <li><strong>Web Beacons:</strong> Pixel tags in emails to track opens</li>
+                    <li><strong>Server Logs:</strong> IP addresses and access patterns</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>4. Your Cookie Preferences</h3>
+
+                <h4>4.1 Cookie Consent Banner</h4>
+                <p>
+                    When you first visit Warraq, a consent banner appears. You can:
+                </p>
+                <ul>
+                    <li><strong>Accept All:</strong> Allow all cookies</li>
+                    <li><strong>Customize:</strong> Choose which cookies to allow</li>
+                    <li><strong>Reject Non-Essential:</strong> Disable marketing and analytics only</li>
+                </ul>
+
+                <h4>4.2 Browser Settings</h4>
+                <p>
+                    Most browsers allow you to:
+                </p>
+                <ul>
+                    <li>View stored cookies</li>
+                    <li>Delete cookies</li>
+                    <li>Disable cookies entirely (not recommended—may break features)</li>
+                    <li>Block third-party cookies</li>
+                </ul>
+
+                <p>
+                    See your browser's settings (Chrome, Firefox, Safari, Edge) for instructions.
+                </p>
+
+                <h4>4.3 Do Not Track (DNT)</h4>
+                <p>
+                    If your browser has DNT enabled, we respect this preference for third-party marketing cookies.
+                </p>
+            </section>
+
+            <section>
+                <h3>5. Google Analytics</h3>
+
+                <p>
+                    Warraq uses Google Analytics to understand user behavior. Google may use your data for 
+                    personalized advertising. You can opt out via:
+                </p>
+
+                <ul>
+                    <li><a href="https://tools.google.com/dlpage/gaoptout" target="_blank">Google Analytics Opt-Out Browser Add-on</a></li>
+                    <li>Google Ad Settings</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>6. Third-Party Advertising</h3>
+
+                <p>
+                    We work with advertising partners (Google, Facebook) who may use cookies to show you 
+                    personalized ads based on your interests. You can:
+                </p>
+
+                <ul>
+                    <li>Opt out in your Google Ad Settings</li>
+                    <li>Opt out in your Facebook Ad Preferences</li>
+                    <li>Use the <a href="https://optout.aboutads.info/" target="_blank">Digital Advertising Alliance opt-out tool</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>7. International Users</h3>
+
+                <p>
+                    <strong>EU Users (GDPR):</strong> Cookies require explicit consent before non-essential usage.
+                </p>
+
+                <p>
+                    <strong>California Users (CCPA):</strong> You have the right to know, delete, and opt-out of 
+                    the sale of personal information.
+                </p>
+            </section>
+
+            <section>
+                <h3>8. Cookie Changes</h3>
+
+                <p>
+                    We may add new cookies as we improve the platform. This policy will be updated accordingly, 
+                    and you'll receive notice of material changes.
+                </p>
+            </section>
+
+            <div class="last-updated">
+                <strong>Last Updated:</strong> September 5, 2026
+            </div>
+        </div>
+
+        <!-- ===== CONTACT ===== -->
+        <div id="contact" class="content-section">
+            <h2>Contact & Support</h2>
+
+            <section>
+                <h3>Questions About Our Policies?</h3>
+
+                <p>
+                    If you have questions, concerns, or requests regarding our Privacy Policy, Terms of Service, 
+                    or Cookie Policy, please contact us:
+                </p>
+            </section>
+
+            <section>
+                <h3>Contact Information</h3>
+
+                <div class="info-box">
+                    <strong>Email</strong>
+                    <p>
+                        <strong>General Support:</strong> <a href="mailto:support@warraq.com">support@warraq.com</a><br>
+                        <strong>Privacy Inquiries:</strong> <a href="mailto:privacy@warraq.com">privacy@warraq.com</a><br>
+                        <strong>Legal Matters:</strong> <a href="mailto:legal@warraq.com">legal@warraq.com</a>
+                    </p>
+                </div>
+
+                <div class="info-box">
+                    <strong>Mailing Address</strong>
+                    <p>
+                        Warraq Learning Platform<br>
+                        Erbil, Iraq<br>
+                        <br>
+                        <em>Note: We prefer email for faster response.</em>
+                    </p>
+                </div>
+
+                <div class="info-box">
+                    <strong>Web</strong>
+                    <p>
+                        <a href="https://www.warraq.com" target="_blank">www.warraq.com</a><br>
+                        <a href="https://www.warraq.com/support" target="_blank">www.warraq.com/support</a>
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h3>Data Subject Rights Requests</h3>
+
+                <p>
+                    To exercise your rights under GDPR, CCPA, or other privacy laws:
+                </p>
+
+                <ol>
+                    <li>Email <strong>privacy@warraq.com</strong> with your request</li>
+                    <li>Include your full name and registered email address</li>
+                    <li>Specify which right you're exercising (access, deletion, portability, etc.)</li>
+                    <li>We will respond within 30 days</li>
+                </ol>
+
+                <p><strong>Common Requests:</strong></p>
+                <ul>
+                    <li>"I want a copy of all my personal data (GDPR Article 15, CCPA §1798.100)"</li>
+                    <li>"I want to delete my account and all associated data"</li>
+                    <li>"I want to opt out of marketing emails"</li>
+                    <li>"I want to download my learning progress report"</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Response Times</h3>
+
+                <ul>
+                    <li><strong>General Support:</strong> 24-48 hours</li>
+                    <li><strong>Privacy Inquiries:</strong> 5-10 business days</li>
+                    <li><strong>Legal Requests:</strong> 10-30 business days (may require verification)</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Data Protection Authority</h3>
+
+                <p>
+                    If you're in the EU and believe your rights have been violated, you can file a complaint with 
+                    your local data protection authority (DPA).
+                </p>
+            </section>
+
+            <div class="last-updated">
+                <strong>Last Updated:</strong> September 5, 2026
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024-2026 Warraq Learning Platform. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://www.warraq.com">Home</a>
+                <a href="https://www.warraq.com/courses">Courses</a>
+                <a href="https://www.warraq.com/about">About</a>
+                <a href="https://github.com/warraq/legal" target="_blank">GitHub Repository</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        function switchTab(tabName) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Remove active class from all buttons
+            const buttons = document.querySelectorAll('.nav-btn');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+
+            // Show selected section
+            document.getElementById(tabName).classList.add('active');
+
+            // Add active class to clicked button
+            event.target.classList.add('active');
+
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
+        // Set initial active button
+        document.querySelector('.nav-btn').classList.add('active');
+    </script>
+</body>
+</html>
